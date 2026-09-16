@@ -1,0 +1,208 @@
+:root {
+  --bg-dark: #050505;
+  --panel-bg: #111116;
+  --gold-shadow: #8b794e;
+  --gold-highlight: #ffd700;
+  --accent-teal: #42e8d3;
+  --border-color: #33333d;
+  --text-light: #ffffff;
+  --text-muted: #888888;
+  --mario-sign-bg: #d85000;    /* Classic NES orange/red background */
+  --mario-border: #000000;     /* Pure black border line */
+  --mario-shadow: #101010;     /* Drop shadow for 3D effect */
+  --mario-screw: #101010;
+}
+
+html {
+  scroll-behavior: smooth; 
+}
+
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: var(--bg-dark);
+  font-family: 'Press Start 2P', cursive, monospace;
+  color: var(--text-light);
+  image-rendering: pixelated;
+}
+
+/* Pinned Top Navbar */
+.spa-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 60px;
+  background-color: rgba(5, 5, 5, 0.9);
+  border-bottom: 2px solid var(--border-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5vw;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+.nav-title {
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: var(--accent-teal);
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav-links a {
+  color: var(--text-light);
+  text-decoration: none;
+  font-size: 13px;
+  letter-spacing: 1px;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: var(--gold-highlight);
+}
+
+.hero-section {
+  position: relative; /* Establishes coordinate space for the absolute floor placement */
+  width: 100vw;
+  height: calc(100vh - 60px); /* Fills screen height minus fixed navbar */
+  margin-top: 60px;
+  background: url('../assets/background.png') no-repeat center center;
+  background-size: 100% 100%; /* Stretches floor to fixed pixel position */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 170px;
+  box-sizing: border-box;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; 
+  align-items: center;
+  z-index: 2;
+}
+
+.hero-name {
+  position: relative;
+  background-color: var(--mario-sign-bg);
+  border: 4px solid var(--mario-border);
+  outline: 4px solid var(--mario-sign-bg);
+  box-shadow: 
+    0 0 0 8px var(--mario-border),
+    8px 8px 0px 8px var(--mario-shadow);
+
+  padding: 30px 40px;
+  max-width: 650px;
+  margin: 0 auto;
+  text-align: center;
+  image-rendering: pixelated;
+  user-select: none;
+}
+
+.hero-subtitle {
+  color: var(--accent-teal);
+  letter-spacing: 3px;
+  font-size: 14px;
+}
+
+/* Pins sprites directly onto the brick ground */
+.character {
+  position: absolute;
+  bottom: -30px; /* Adjust this value if your brick line is higher/lower */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+}
+/* SPA Sections Layout */
+.spa-content {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.spa-section {
+  padding: 60px 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.section-title {
+  font-size: 32px;
+  letter-spacing: 4px;
+  margin-bottom: 30px;
+  text-shadow: 3px 3px 0px var(--gold-shadow);
+}
+
+.subsection-title {
+  font-size: 18px;
+  letter-spacing: 2px;
+  color: var(--accent-teal);
+  margin: 30px 0 15px;
+}
+
+/* Reusable Pixel Panels */
+.pixel-panel {
+  background: var(--panel-bg);
+  border: 2px solid var(--border-color);
+  padding: 24px;
+  box-shadow: 4px 4px 0px #000;
+  line-height: 1.6;
+}
+
+/* Skills Badges */
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tag {
+  background: var(--border-color);
+  color: var(--gold-highlight);
+  border: 1px solid var(--gold-shadow);
+  padding: 6px 12px;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+/* Project Cards */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.project-card h3 {
+  color: var(--accent-teal);
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+/* Contact Button */
+.contact-btn {
+  display: inline-block;
+  margin-top: 15px;
+  background: var(--accent-teal);
+  color: var(--bg-dark);
+  padding: 12px 24px;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 2px;
+  border: 2px solid var(--text-light);
+}
+
+.contact-btn:hover {
+  background: var(--gold-highlight);
+}

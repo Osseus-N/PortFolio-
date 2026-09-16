@@ -1,0 +1,98 @@
+.hero-container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+.site-header {
+  margin-bottom: 24px;
+}
+
+.hero-content {
+  display: flex;
+  gap: 24px;
+  align-items: stretch;
+  width: 100%;
+}
+
+.left-hero-bg {
+  width: 350px;
+  min-height: 380px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 20px;
+  box-sizing: border-box;
+}
+
+.left-hero-bg h1 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.avatar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.avatar-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: inline-flex;
+  transition: transform 0.2s ease;
+}
+
+.avatar-btn:hover {
+  transform: scale(1.05);
+}
+
+.nav-icon {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  image-rendering: pixelated;
+}
+
+/* Right HUD Wrapper taking remaining width */
+.overview-hud-wrapper {
+  flex: 1;                            /* Takes up all remaining width */
+  background-size: 100% 100%;         /* Fits box-hud background image */
+  background-repeat: no-repeat;
+  background-position: center;
+  image-rendering: pixelated;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+/* Internal Overview component text styling */
+.overview-container {
+  text-align: center;
+  max-width: 80%;
+}
+
+.overview-container h2 {
+  margin: 0 0 8px 0;
+  font-size: 1.8rem;
+}
+
+.overview-container h3 {
+  margin: 0 0 16px 0;
+  font-size: 1.2rem;
+  opacity: 0.85;
+}
+
+.overview-container p {
+  margin: 0;
+  line-height: 1.5;
+}

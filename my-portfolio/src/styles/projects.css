@@ -1,0 +1,206 @@
+.page-heading {
+    margin-bottom: 35px;
+}
+
+
+.page-heading span {
+    color: #777;
+
+    font-size: 11px;
+
+    letter-spacing: 3px;
+}
+
+
+.page-heading h1 {
+    font-size: 48px;
+
+    letter-spacing: 5px;
+
+    margin: 10px 0;
+
+    text-shadow:
+        4px 4px 0 #8f7c45;
+}
+
+
+.page-heading p {
+    color: #888;
+
+    font-size: 14px;
+}
+
+
+.projects-list {
+    display: flex;
+    flex-direction: column;
+
+    gap: 18px;
+}
+
+
+.project-card {
+    display: grid;
+
+    grid-template-columns: 80px 1fr 180px;
+
+    gap: 25px;
+
+    background: #101014;
+
+    border: 2px solid #333;
+
+    padding: 25px;
+
+    box-shadow:
+        6px 6px 0 #08080b;
+}
+
+
+.project-card:hover {
+    border-color: #706642;
+
+    transform: translate(-2px, -2px);
+}
+
+
+.project-number {
+    color: #777;
+
+    font-size: 14px;
+
+    padding-top: 4px;
+}
+
+
+.project-type {
+    color: #9e8d59;
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+}
+
+
+.project-info h2 {
+    font-size: 25px;
+
+    letter-spacing: 3px;
+
+    margin: 8px 0 15px;
+}
+
+
+.project-info p {
+    color: #999;
+
+    line-height: 1.7;
+
+    font-size: 13px;
+
+    max-width: 700px;
+}
+
+
+.project-tech {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-top: 15px;
+}
+
+
+.tech-tag {
+    border: 1px solid #444;
+
+    padding: 6px 9px;
+
+    color: #bbb;
+
+    font-size: 10px;
+
+    background: #17171b;
+}
+
+
+.project-status {
+    border-left: 1px solid #333;
+
+    padding-left: 20px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+
+.project-status span {
+    color: #666;
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+}
+
+
+.project-status strong {
+    font-size: 11px;
+
+    color: #ddd;
+
+    margin-top: 8px;
+
+    line-height: 1.5;
+}
+
+
+@media (max-width: 800px) {
+
+    .overview-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stats-panel {
+        grid-row: auto;
+    }
+
+    .project-card {
+        grid-template-columns: 1fr;
+    }
+
+    .project-status {
+        border-left: none;
+
+        border-top: 1px solid #333;
+
+        padding-left: 0;
+        padding-top: 15px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .pixel-character-header {
+        align-items: start;
+    }
+
+    .pixel-character-header h1 {
+        font-size: 35px;
+    }
+
+    .pixel-nav {
+        overflow-x: auto;
+    }
+
+    .nav-button {
+        white-space: nowrap;
+    }
+
+}
