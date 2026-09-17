@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import '../styles/characterpage.css';
 import norli_sprite from'../assets/norlitoChar.png';
 import yuri_sprite from'../assets/yuriChar.png';
@@ -17,11 +16,10 @@ export default function ChooseYourCharacter(){
               <span className="character-name">Norlito</span>
 
         <div className="sprite-placeholder">
-        <Link to="/dashboard" className="character-link">
           <div className="sprite" 
-            style={{ backgroundImage: `url(${norli_sprite})` }}>   
+            style={{ backgroundImage: `url(${norli_sprite})` }}
+            onClick={() => onSelectChar('norlito')}>   
           </div>
-        </Link>
       </div>
       </div>
 
@@ -29,11 +27,10 @@ export default function ChooseYourCharacter(){
                 <span className="character-name">Yuri</span>
 
         <div className="sprite-placeholder">
-        <Link to="/dashboard" className="character-link">
           <div className="sprite"
-              style={{ backgroundImage: `url(${yuri_sprite})` }}>   
+              style={{ backgroundImage: `url(${yuri_sprite})` }}
+              onClick={() => onSelectChar('yuri')}>      
           </div>
-        </Link>
         </div>
         </div>
 

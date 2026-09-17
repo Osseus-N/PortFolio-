@@ -8,9 +8,7 @@ import Projects from "../pages/Projects";
 export default function AppRoutes() {
   return (
     <Routes>
-      <Route path="/" element={<ChooseYourCharacter />} />
-
-      <Route path="/dashboard" element={<Dashboard />} >
+      <Route path="/" element={<Dashboard />} >
                 <Route index element={<Navigate to="overview" replace />}/>
                 <Route path="overview" element={<Overview />} />
                 <Route path="projects" element={<Projects />} />
