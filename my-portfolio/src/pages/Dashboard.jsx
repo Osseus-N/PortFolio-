@@ -33,7 +33,7 @@ export default function Dashboard() {
       </div>
 
         <div className="character">
-            <ChooseYourCharacter onSelectChar={setSelectedCharacter} />
+            <ChooseYourCharacter onSelectChar={setSelectedCharacter} selectedChar={selectedCharacter} />
         </div>
         </header>
         

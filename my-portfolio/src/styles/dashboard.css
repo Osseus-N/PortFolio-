@@ -1,5 +1,5 @@
 :root {
-  --bg-dark: #717070;
+  --bg-dark: #f5f1f1;
   --panel-bg: #111116;
   --gold-shadow: #8b794e;
   --gold-highlight: #ffd700;
@@ -7,7 +7,7 @@
   --border-color: #33333d;
   --text-light: #ffffff;
   --text-muted: #888888;
-  --mario-sign-bg: #d85000;    /* Classic NES orange/red background */
+  --mario-sign-bg: #d84f00e2;    /* Classic NES orange/red background */
   --mario-border: #000000;     /* Pure black border line */
   --mario-shadow: #101010;     /* Drop shadow for 3D effect */
   --mario-screw: #101010;
@@ -141,19 +141,20 @@ body, html, #root {
   font-size: 32px;
   letter-spacing: 4px;
   margin-bottom: 30px;
-  text-shadow: 3px 3px 0px var(--gold-shadow);
+  text-shadow: 2px 2px 0px var(--mario-sign-bg);
+  color: var(--mario-screw);
 }
 
 .subsection-title {
   font-size: 18px;
   letter-spacing: 2px;
-  color: var(--accent-teal);
+  color: var(--mario-screw);
   margin: 30px 0 15px;
 }
 
 /* Reusable Pixel Panels */
 .pixel-panel {
-  background: var(--panel-bg);
+  background: var(--mario-sign-bg);
   border: 2px solid var(--border-color);
   padding: 24px;
   box-shadow: 4px 4px 0px #000;
@@ -204,4 +205,42 @@ body, html, #root {
 
 .contact-btn:hover {
   background: var(--gold-highlight);
+}
+
+.project-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.project-title h2 {
+  margin: 0;
+  font-size: 14px;
+  color: var(--accent-teal);
+  letter-spacing: 1px;
+}
+
+.project-link {
+  background: transparent;
+  border: 2px solid var(--text-light);
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 2px 2px 0px #000;
+  transition: background 0.15s ease, transform 0.1s ease;
+}
+
+.project-link img {
+  width: 16px;
+  height: 16px;
+  image-rendering: pixelated;
+}
+
+.project-link:hover {
+  background: var(--mario-sign-bg);
+  transform: translateY(-1px);
 }

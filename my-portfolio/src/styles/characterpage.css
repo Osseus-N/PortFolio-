@@ -53,6 +53,7 @@ body {
   transform: translateY(-5px);
 }
 
+
 /* Sprite container */
 .sprite-placeholder {
   width: 110px;
@@ -76,14 +77,15 @@ body {
   transform: scale(1); 
   transform-origin: top top;
 }
-
+.sprite.active {
+  filter:grayscale(0%);
+  animation: character-animation 1s steps(6) infinite;
+}
 .character-card:hover .sprite {
   filter:grayscale(0%);
   animation: character-animation 1s steps(6) infinite;
 }
-.character-card:active .sprite{
-    animation: character-animation 1s steps(6) infinite; 
-}
+
 @keyframes character-animation {
   from {
     background-position: -1728px 0;

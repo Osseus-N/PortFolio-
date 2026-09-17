@@ -1,5 +1,3 @@
-import "../styles/overview.css";    
-
 function Overview({character}) {
 
     return (

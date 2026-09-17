@@ -1,3 +1,5 @@
+import githubIcon from "../assets/github/github-normal.png";
+
 function ProjectCard({ project }) {
     return (
         <article className="project-card">
@@ -11,11 +13,14 @@ function ProjectCard({ project }) {
                 <span className="project-type">
                     {project.type}
                 </span>
+                <div className="project-title">
+                    <h2>{project.title}</h2>
 
-                <h2>
-                    {project.title}
-                </h2>
-
+                <button className="project-link" 
+                onClick={() => window.open(project.link, "_blank", "noopener,noreferrer")}>
+                <img src={githubIcon} alt="GitHub repository link" />
+  </button>
+</div>
                 <p>
                     {project.description}
                 </p>
