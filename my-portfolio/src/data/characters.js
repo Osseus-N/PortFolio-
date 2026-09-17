@@ -15,6 +15,7 @@ export const characters = {
         link2:"",
         link3:"",
 
+
         stats: {
             coding: 88,
             backend: 92,
@@ -42,6 +43,11 @@ export const characters = {
         link3:"https://github.com/ShenhaCoding/Student-Time-Management-System",
         link4:"https://github.com/ShenhaCoding/Typoria-The-Key-Master-s-Code",
 
+        contact: {
+            github:"https://github.com/ShenhaCoding",
+            facebook:"https://web.facebook.com/profile.php?id=61562966378033",
+            email:"yenyuripadua@gmail.com",
+        },
 
         stats: {
             coding: 84,
