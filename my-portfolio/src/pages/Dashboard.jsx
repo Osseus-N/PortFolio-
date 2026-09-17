@@ -5,12 +5,13 @@ import Overview from "./Overview"
 import Projects from './Projects';
 import Contact from './Contact';
 import {characters} from "../data/characters.js";
+import {projects} from "../data/projects.js";
 
 export default function Dashboard() {
 
     const [selectedCharacter, setSelectedCharacter ] = useState('norlito');
     const character = characters[selectedCharacter];
-
+    const characterProjects = projects.filter((project) =>character.projectIds.includes(project.id));
   return (
     <div className="spa-container">
 
@@ -36,14 +37,13 @@ export default function Dashboard() {
         
       <main className="spa-content">
       <div className="Overview">
-          <Overview skills={character.skills} />
+            <Overview character={character} />
       </div>
       
       <div>
-          <Projects projects={character.projects} />
+          <Projects projects={projects} />
        </div>
 
-        {/* Section 3: Contact Me */}
       <div>
           <Contact contact={character.contact} />
       </div>

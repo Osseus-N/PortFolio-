@@ -11,7 +11,7 @@ function Overview({character}) {
 
           <h3 className="subsection-title">SKILLS & TOOLKIT</h3>
           <div className="skill-tags">
-           {character.map((skill, index) => (
+           {character.skills.map((skill, index) => (
             <span key={index} className="tag">{skill}</span>
             ))}
           </div>

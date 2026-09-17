@@ -3,7 +3,7 @@ import '../styles/characterpage.css';
 import norli_sprite from'../assets/norlitoChar.png';
 import yuri_sprite from'../assets/yuriChar.png';
 
-export default function ChooseYourCharacter(){
+export default function ChooseYourCharacter({onSelectChar}){
   return (
     <div className="character-select-container">
       <div className="title-section">
@@ -29,7 +29,7 @@ export default function ChooseYourCharacter(){
         <div className="sprite-placeholder">
           <div className="sprite"
               style={{ backgroundImage: `url(${yuri_sprite})` }}
-              onClick={() => onSelectChar('yuri')}>      
+              onClick={() => onSelectChar('Norlito')}>      
           </div>
         </div>
         </div>
