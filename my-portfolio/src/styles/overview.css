@@ -1,0 +1,31 @@
+/* Justify the description text inside pixel panels */
+.pixel-panel p {
+    color: #a5a5a7;
+    line-height: 1.8;
+    font-size: 14px;
+
+    text-align: justify;   /* NEW: justify text */
+    white-space: pre-wrap; /* NEW: preserve line breaks */
+    word-break: break-word;/* NEW: prevent overflow */
+}
+
+/* Make skill list items wrap neatly and justify the container */
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    text-align: justify; /* NEW: justify alignment */
+}
+
+/* Optional: make skill items equal width for a cleaner justified look */
+.skill-item {
+    border: 1px solid #4c4c50;
+    padding: 8px 12px;
+    color: #ddd;
+    font-size: 12px;
+    background: #17171b;
+
+    flex: 1 1 calc(33.333% - 10px); /* NEW: 3 per row */
+    text-align: center;             /* Center text inside each skill */
+}

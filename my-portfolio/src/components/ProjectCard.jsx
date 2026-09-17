@@ -19,8 +19,8 @@ function ProjectCard({ project }) {
                 <button className="project-link" 
                 onClick={() => window.open(project.link, "_blank", "noopener,noreferrer")}>
                 <img src={githubIcon} alt="GitHub repository link" />
-  </button>
-</div>
+                </button>
+            </div>
                 <p>
                     {project.description}
                 </p>

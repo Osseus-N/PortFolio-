@@ -6,9 +6,20 @@ export const characters = {
         level: 21,
         
         description:
-            "Focused on building practical systems, backend architecture, and web applications.",
+        "Aspiring Java Spring Boot Backend Developer\n"+"\n"+
+        "An aspiring backend developer working toward becoming a proficient Java Spring Boot developer who builds secure and reliable server-side systems. Currently developing skills in creating REST APIs, handling business logic, and managing databases. Eager to grow by building efficient, secure applications that deliver consistent data to the frontend.",
 
         skills: ["Java", "Spring Boot", "React", "MySQL"],
+
+        contact: {
+            github:"https://github.com/Osseus-N",
+            facebook:"https://facebook.com/norlito.domingo.90",
+            email:"domingonorlito38@gmail.com"
+        },
+
+        link1:"",
+        link2:"",
+        link3:"",
 
         stats: {
             coding: 88,
@@ -27,9 +38,16 @@ export const characters = {
         level: 21,
 
         description:
-            "Focused on creating interfaces, user experiences, and interactive web applications.",
+            "Aspiring React JS Frontend Developer\n"+"\n"+
+        "An aspiring frontend developer working toward becoming a skilled React JS developer who builds responsive, user-friendly web interfaces. Currently strengthening skills in creating reusable components and turning designs into smooth, interactive screens. Eager to grow by connecting interfaces to backend APIs and delivering fast, reliable user experiences.",
 
         skills: ["JavaScript", "React", "CSS", "UI / UX"],
+
+        link1:"",
+        link2:"https://github.com/ShenhaCoding/Student-Library-Management-System",
+        link3:"https://github.com/ShenhaCoding/Student-Time-Management-System",
+        link4:"https://github.com/ShenhaCoding/Typoria-The-Key-Master-s-Code",
+
 
         stats: {
             coding: 84,
