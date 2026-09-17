@@ -10,10 +10,10 @@ function Contact({ contact }) {
       <h2 className="section-title">CONTACT ME</h2>
 
       <div className="pixel-panel contact-panel">
-        <p>Ready to start a new quest or collaborate on a project?</p>
+        <p>READY TO START A NEW QUEST OR COLLABORATE ON A PROJECT?</p>
 
         <a href={`mailto:${contact.email}`} className="contact-btn">
-          SEND MESSAGE
+          SEND A MESSAGE
         </a>
 
         <div className="social-links">

@@ -16,7 +16,7 @@ export default function Dashboard() {
     <div className="spa-container">
 
       <nav className="spa-navbar">
-        <div className="nav-title">PLAYER ONE</div>
+        <div className="nav-title">PORTFOLIO</div>
         <ul className="nav-links">
           <li><a href="#overview">OVERVIEW</a></li>
           <li><a href="#projects">PROJECTS</a></li>

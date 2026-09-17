@@ -30,6 +30,6 @@
 }
 
 .social-icon:hover {
-  background: var(--accent-teal);
+  background: var(--mario-sign-bg);
   transform: translateY(-2px);
 }

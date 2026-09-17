@@ -17,10 +17,6 @@ export const characters = {
             email:"domingonorlito38@gmail.com"
         },
 
-        link1:"",
-        link2:"",
-        link3:"",
-
         stats: {
             coding: 88,
             backend: 92,

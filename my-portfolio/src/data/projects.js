@@ -6,7 +6,8 @@ export const projects = [
         description:
             "A laundry point-of-sale system designed to manage customers, employees, services, transactions, and inventory.",
         tech: ["React", "Spring Boot", "MySQL"],
-        status: "IN DEVELOPMENT"
+        status: "IN DEVELOPMENT",
+        link: "https://github.com/Osseus-N/Laundry_POS_System"
     },
 
     {
@@ -16,17 +17,8 @@ export const projects = [
         description:
             "A command-line weather application that retrieves current weather and forecast information from an API.",
         tech: ["Java", "Spring Boot", "WebClient"],
-        status: "COMPLETED"
-    },
-
-    {
-        id: 3,
-        title: "Portfolio",
-        type: "WEB APPLICATION",
-        description:
-            "A two-person interactive portfolio presented as a retro pixel-art character selection experience.",
-        tech: ["React", "CSS", "JavaScript"],
-        status: "IN DEVELOPMENT"
+        status: "COMPLETED",
+        link: "https://github.com/Osseus-N/Weather_CLI_APPLICATION"
     },
 
     {
