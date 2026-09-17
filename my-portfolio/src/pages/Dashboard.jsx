@@ -11,7 +11,7 @@ export default function Dashboard() {
 
     const [selectedCharacter, setSelectedCharacter ] = useState('norlito');
     const character = characters[selectedCharacter];
-    const characterProjects = projects.filter((project) =>character.projectIds.includes(project.id));
+    const characterProjects = projects.filter((projects) => character.projectIds.includes(projects.id));
   return (
     <div className="spa-container">
 
@@ -26,9 +26,11 @@ export default function Dashboard() {
 
       <header className="hero-section">
         <div className="hero-content">
-            <h1 className="hero-name">{character.name}</h1>
-            <p className="hero-subtitle">{character.role}</p>
-        </div>  
+          <div className="hero-name">
+          <h1 className="hero-title">{character.name}</h1>
+          <p className="hero-subtitle">{character.role}</p>
+        </div>
+      </div>
 
         <div className="character">
             <ChooseYourCharacter onSelectChar={setSelectedCharacter} />
@@ -41,7 +43,7 @@ export default function Dashboard() {
       </div>
       
       <div>
-          <Projects projects={projects} />
+          <Projects projects={characterProjects} />
        </div>
 
       <div>

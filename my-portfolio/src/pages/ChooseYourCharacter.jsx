@@ -29,7 +29,7 @@ export default function ChooseYourCharacter({onSelectChar}){
         <div className="sprite-placeholder">
           <div className="sprite"
               style={{ backgroundImage: `url(${yuri_sprite})` }}
-              onClick={() => onSelectChar('Norlito')}>      
+              onClick={() => onSelectChar('yuri')}>      
           </div>
         </div>
         </div>

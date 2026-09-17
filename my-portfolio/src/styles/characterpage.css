@@ -81,8 +81,9 @@ body {
   filter:grayscale(0%);
   animation: character-animation 1s steps(6) infinite;
 }
-
-/* Sprite animation */
+.character-card:active .sprite{
+    animation: character-animation 1s steps(6) infinite; 
+}
 @keyframes character-animation {
   from {
     background-position: -1728px 0;

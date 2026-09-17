@@ -2,9 +2,9 @@ export const characters = {
     norlito: {
         id: "norlito",
         name: "NORLITO",
-        class: "FULL STACK DEVELOPER",
+        role: "BACKEND DEVELOPER",
         level: 21,
-
+        
         description:
             "Focused on building practical systems, backend architecture, and web applications.",
 
