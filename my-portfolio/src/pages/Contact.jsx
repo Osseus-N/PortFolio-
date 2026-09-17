@@ -12,7 +12,11 @@ function Contact({ contact }) {
       <div className="pixel-panel contact-panel">
         <p>READY TO START A NEW QUEST OR COLLABORATE ON A PROJECT?</p>
 
-        <a href={`mailto:${contact.email}`} className="contact-btn">
+        <a href={`https://mail.google.com/mail/?view=cm&fs=1&to=${contact.email}`}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="contact-btn"
+>
           SEND A MESSAGE
         </a>
 
