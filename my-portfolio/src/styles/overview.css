@@ -1,207 +1,31 @@
-.pixel-character-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: end;
-
-    margin-bottom: 35px;
-}
-
-
-.small-label {
-    color: #777;
-    font-size: 11px;
-    letter-spacing: 3px;
-
-    margin: 0 0 8px;
-}
-
-
-.pixel-character-header h1 {
-    font-size: clamp(38px, 6vw, 68px);
-
-    margin: 0;
-
-    letter-spacing: 6px;
-
-    text-shadow:
-        4px 4px 0 #8f7c45;
-}
-
-
-.character-class {
-    color: #aaa;
-    letter-spacing: 2px;
-    font-size: 12px;
-}
-
-
-.level-box {
-    border: 2px solid #444;
-
-    min-width: 85px;
-    padding: 15px;
-
-    text-align: center;
-
-    background: #111115;
-}
-
-
-.level-box span {
-    display: block;
-
-    color: #777;
-    font-size: 10px;
-    letter-spacing: 2px;
-}
-
-
-.level-box strong {
-    display: block;
-
-    color: #eee;
-    font-size: 30px;
-
-    margin-top: 4px;
-}
-
-
-.overview-grid {
-    display: grid;
-
-    grid-template-columns:
-        minmax(0, 1.4fr)
-        minmax(0, 0.8fr);
-
-    gap: 20px;
-}
-
-
-.pixel-panel {
-    background: #101014;
-
-    border: 2px solid #343438;
-
-    padding: 25px;
-
-    box-shadow:
-        6px 6px 0 #08080b;
-}
-
-
-.panel-title {
-    color: #c4b06e;
-
-    font-size: 12px;
-
-    letter-spacing: 3px;
-
-    margin-bottom: 22px;
-
-    border-bottom: 1px solid #2e2e32;
-
-    padding-bottom: 12px;
-}
-
-
+/* Justify the description text inside pixel panels */
 .pixel-panel p {
     color: #a5a5a7;
-
     line-height: 1.8;
-
     font-size: 14px;
+
+    text-align: justify;   /* NEW: justify text */
+    white-space: pre-wrap; /* NEW: preserve line breaks */
+    word-break: break-word;/* NEW: prevent overflow */
 }
 
-
+/* Make skill list items wrap neatly and justify the container */
 .skill-list {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+
+    text-align: justify; /* NEW: justify alignment */
 }
 
-
+/* Optional: make skill items equal width for a cleaner justified look */
 .skill-item {
     border: 1px solid #4c4c50;
-
     padding: 8px 12px;
-
     color: #ddd;
-
     font-size: 12px;
-
     background: #17171b;
-}
 
-
-.stats-panel {
-    grid-row: span 2;
-}
-
-
-.stat-box {
-    margin-bottom: 20px;
-}
-
-
-.stat-header {
-    display: flex;
-    justify-content: space-between;
-
-    font-size: 11px;
-
-    color: #aaa;
-
-    margin-bottom: 7px;
-}
-
-
-.stat-bar {
-    height: 12px;
-
-    border: 1px solid #444;
-
-    background: #08080b;
-
-    padding: 2px;
-}
-
-
-.stat-fill {
-    height: 100%;
-
-    background: #d8d2bd;
-}
-
-
-.quest {
-    display: flex;
-    gap: 18px;
-}
-
-
-.quest-icon {
-    display: flex;
-
-    align-items: center;
-    justify-content: center;
-
-    width: 35px;
-    height: 35px;
-
-    flex-shrink: 0;
-
-    background: #ddd7c5;
-    color: #08080b;
-
-    font-weight: bold;
-}
-
-
-.quest strong {
-    font-size: 13px;
-}
-
-
-.quest p {
-    margin-bottom: 0;
+    flex: 1 1 calc(33.333% - 10px); /* NEW: 3 per row */
+    text-align: center;             /* Center text inside each skill */
 }
