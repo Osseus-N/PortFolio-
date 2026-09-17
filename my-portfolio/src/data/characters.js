@@ -25,7 +25,7 @@ export const characters = {
             database: 81
         },
 
-        projectIds: [1, 2, 3] // Laundry POS, Weather CLI, Portfolio
+        projectIds: [1, 2] // Laundry POS, Weather CLI, Portfolio
     },
 
     yuri: {
@@ -58,6 +58,6 @@ export const characters = {
             creativity: 95
         },
 
-        projectIds: [3] // Portfolio only
+        projectIds: [3,4,5] // Portfolio only
     }
 };

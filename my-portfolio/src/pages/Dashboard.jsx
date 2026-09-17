@@ -49,6 +49,7 @@ export default function Dashboard() {
       <div>
           <Contact contact={character.contact} />
       </div>
+
       </main>
     </div>
   );
